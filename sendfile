@@ -1,0 +1,19 @@
+https://fcm.googleapis.com/fcm/send
+
+
+
+
+
+Added to your starred items
+11:48
+key=AAAAONv9ZI0:APA91bHfQL86QrKrmqPJ6XdgJQIBTUS5aPud5k4yIThCeazo-K8ZnSI9hnX64o1HXN1TqxW9TOXL0b2WMmxTMy6PN2rHTwi_tBBsWgFvV_XCxFMYc4tJQPag8PuL79w1KrzwmH1Kb_vG
+11:48
+{
+"data":{
+	    "notification": {
+        "title": "RED ALERT",
+        "body": "Hello From the other side!"
+    }
+},
+"to": "e_YzLRz1VDk:APA91bHugNAsna1pnCYl2LY75qykakDbysjKuLgUA3QDp9BcUJc6pO4kbBaOstbPWMHK-KV6Pet_ap05eFJI49CgXbEx0GDw3kQRNXmMUAnTmt_y_SzmFHL7v1uNj07nw7SDYIMGQNZr"
+}
