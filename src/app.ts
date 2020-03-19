@@ -3,6 +3,7 @@ import path from 'path';
 
 import indexRouter from './routes/index';
 import subscriptionRouter from './routes/subscription';
+import pushMessageRouter from './routes/pushMessage';
 
 export default class Application {
     public app: express.Application;
@@ -28,6 +29,7 @@ export default class Application {
         this.app.use(express.static(path.join(__dirname, "public")));
         this.app.use('/',indexRouter);
         this.app.use('/subscription',subscriptionRouter);
+        this.app.use('/notify',pushMessageRouter);
     }
 
     start(): void {

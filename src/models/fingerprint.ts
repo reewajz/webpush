@@ -39,6 +39,9 @@ const fingerprintSchema = new Schema(
     },
     details: {
         type: userDetailSchema
+    },
+    organizationID:{
+      type:String
     }
   },
   {

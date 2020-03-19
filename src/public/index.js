@@ -86,7 +86,7 @@ function initFirebaseMessagingRegistration() {
       return messaging.getToken();
     })
     .then(function(token) {
-      // print the token on the HTML page
+      
       tokenElement.innerHTML = "Token is " + token;
       sendSubscriptionToServer(token,fingerprint,details)
 
@@ -115,12 +115,9 @@ messaging.onTokenRefresh(function() {
     });
 });
 
-function sendSubscriptionToServer(token , fingerprint , details) {
-  console.log(token,fingerprint,details)
-  let formData = new FormData();
-  formData.append('token' , token);
-  formData.append('fingerprint' , fingerprint);
-  formData.append('details' , JSON.stringify(details));
+function sendSubscriptionToServer(token , fingerprint , details) { 
+  console.log(token,fingerprint,details);
+  console.log("finger print",fingerprint);
   $.ajax({
     url: '/subscription',
     type: "POST",

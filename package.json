@@ -19,6 +19,7 @@
     "clientjs": "^0.1.11",
     "fingerprintjs2": "^2.1.0",
     "mongoose": "^5.9.2",
+    "node-fetch": "^2.6.0",
     "ts-node": "^8.6.2"
   }
 }
